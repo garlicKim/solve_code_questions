@@ -7,8 +7,8 @@ public class ExceptStringTest {
     public static void main(String[] args) throws Exception {
 
         // 테스트 케이스
-        String[] participant = {"eden", "kiki", "kiki", "leo" };
-        String[] completion = {"kiki", "eden","leo"};
+        String[] participant = {"eden", "kiki", "kiki", "leo"};
+        String[] completion = {"kiki", "eden", "leo"};
 
 
         ExceptStringTest s = new ExceptStringTest();
@@ -24,15 +24,7 @@ public class ExceptStringTest {
 
 
         for(int i=0; i< completionList.size(); i++){
-
-            for(int j=0; j<participantList.size(); j++){
-
-                if(completionList.get(i).equals(participantList.get(j))){
-                    participantList.remove(j);
-                    break;
-                }
-
-            }
+            participantList.remove(completionList.get(i));
         }
 
         String answer = participantList.get(0);
@@ -41,10 +33,9 @@ public class ExceptStringTest {
 
 
     // array를 list로 변경
-    public List changeArray(String[] strs){
+    public List changeArray(String[] strs) {
         List<String> strList = new ArrayList<String>();
-        for (String s : strs)
-        {
+        for (String s : strs) {
             strList.add(s);
         }
 
