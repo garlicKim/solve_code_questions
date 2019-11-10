@@ -3,7 +3,7 @@ package basic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ExceptStringTest {
+public class ExceptString {
     public static void main(String[] args) throws Exception {
 
         // 테스트 케이스
@@ -11,7 +11,7 @@ public class ExceptStringTest {
         String[] completion = {"kiki", "eden", "leo"};
 
 
-        ExceptStringTest s = new ExceptStringTest();
+        ExceptString s = new ExceptString();
         System.out.println(s.solution(participant, completion));
 
 

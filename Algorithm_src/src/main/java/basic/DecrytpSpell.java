@@ -1,6 +1,6 @@
 package basic;
 
-public class DecrytpSpellTest {
+public class DecrytpSpell {
 
     public String decryptSpell(String str) {
 
@@ -28,7 +28,7 @@ public class DecrytpSpellTest {
 
     public static void main(String[] args) {
 
-        DecrytpSpellTest spt = new DecrytpSpellTest();
+        DecrytpSpell spt = new DecrytpSpell();
 
         String result = spt.decryptSpell("aaaaAAAA000000aaaaaaa");
 

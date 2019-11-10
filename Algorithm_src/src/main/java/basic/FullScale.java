@@ -3,11 +3,11 @@ package basic;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FullScaleTest {
+public class FullScale {
 
     public static void main(String[] args) throws Exception {
 
-        FullScaleTest s = new FullScaleTest();
+        FullScale s = new FullScale();
 
         int[] marks = {8,9,10};
 
