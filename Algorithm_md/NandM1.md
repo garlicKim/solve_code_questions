@@ -38,7 +38,7 @@
 ------------
 ### 나의 풀이
 ~~~java
-public class NandM2
+public class NandM1
 {
     static int           N;
     static int           M;
@@ -100,17 +100,7 @@ public class NandM2
             {
                 visited[i] = true; // 방문처리 후
                 list[cnt] = i; // 현재 반복횟수에 해당하는 배열에 i값을 추가
-
-                // 오름차수로 된 list만 재귀를 탄다. (오름차순이 아닌건 탐색할 필요 x)
-                if ( cnt == 0 )
-                {
-                    solution(cnt + 1); // 반복횟수를 증가
-                }
-                else if ( list[cnt - 1] < list[cnt] )
-                {
-                    solution(cnt + 1); // 반복횟수를 증가
-                }
-
+                solution(cnt + 1); // 반복횟수를 증가
                 visited[i] = false; // dfs가 종료 후에는 다시 방문여부를 0으로 초기화
             }
 
